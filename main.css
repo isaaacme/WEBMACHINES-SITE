@@ -238,6 +238,7 @@ nav a:first-child {
 .logo span {
     width: 12ch;
     padding-left: .6rem;
+    z-index: -10;
 }
 
 .logo img {
