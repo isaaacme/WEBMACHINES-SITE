@@ -103,7 +103,8 @@ section {
 }
 
 body {
-    line-height: 1
+    line-height: 1;
+    background-color:var(--bg-color);
 }
 
 ol,
@@ -146,9 +147,11 @@ h4 {
 /* global styles */
 
 :root {
-    --main-color: navy;
+    --main-color:#0147ff;
+    --main-color-light:#0149ff44;
     --second-color: #2b78fa;
     --text-color: #111;
+    --bg-color:#f0efea;
     --anima: all .16s ease-in-out;
     --anima-slow: all .32s ease-in-out;
 }
@@ -166,7 +169,7 @@ a {
 }
 
 .content {
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 2rem
 }
@@ -180,30 +183,37 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+.links li a{
+    padding:2px 4px;
+    font-size: 1.6rem;
+}
 
-nav a {
+.links li a:hover {
+    background-color: var(--main-color-light);
+}
+
+.links{
+    display: flex;
+}
+
+.links li{
     margin-left: 2rem;
-    text-transform: uppercase;
-    padding: 0px 2px;
 }
-
-nav a:hover {
-    background-color: rgba(0, 89, 255, 0.404);
-}
-
-
-nav a:last-child {
+.links li:last-child a {
     font-weight: 900;
 }
 
-nav a:first-child {
-    font-size: 1.2rem;
-}
 
+
+
+header{
+    min-height: 65vh;
+}
 
 .title {
-    font-weight: 900;
-    font-size: 5rem;
+    font-weight: 600;
+    font-size: 12rem;
+    margin-top:5rem;
     color: transparent;
     -webkit-text-stroke: 2px var(--main-color);
     text-stroke: 2px var(--main-color);
@@ -213,7 +223,7 @@ nav a:first-child {
 
 
 .title::before {
-    content: 'Webmachines is a business focused Design and Web development Studio, creating solutions that convert.';
+    content: 'Your website is not enough.';
     color: rgba(8, 41, 226, 0.205);
     position: absolute;
     top: 6px;
@@ -246,14 +256,15 @@ nav a:first-child {
 }
 
 header p {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    padding: 1rem 0 2rem
 }
 
 .main-cta {
     background: rgb(2, 0, 36);
     background: linear-gradient(317deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 161, 1) 35%, rgba(0, 212, 255, 1) 100%);
     color: white;
-    padding: .75rem 5rem;
+    padding: 1rem 3rem;
     margin-top: 1rem;
     display: inline-block;
     font-size: 2rem;
@@ -261,6 +272,8 @@ header p {
     text-transform: uppercase;
     font-weight: 900;
     transition: var(--anima);
+    max-width: 320px;
+    text-align: center;
 
 }
 
@@ -273,4 +286,8 @@ header p {
         6px 6px 0px rgba(2, 0, 36, 1);
     transform: translate(-4px, -6px);
 
+}
+
+main{
+    background-color: wheat;
 }
