@@ -434,6 +434,7 @@ section.deliver .subtitle{
 }
 
 .process {
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 1fr;
@@ -441,7 +442,9 @@ section.deliver .subtitle{
 
 .arrow{
     font-size: 12rem;
-    color: var(--main-color);
+    color: transparent;
+    -webkit-text-stroke: var(--text-outline);
+    text-stroke: var(--text-outline);
     align-self: center;
     justify-self: center;
     position: relative;
