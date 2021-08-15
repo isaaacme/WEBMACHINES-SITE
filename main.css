@@ -310,6 +310,32 @@ video{
     top:5rem;
     right:2rem;
     opacity: .75;
+    transition:var(--anima);
+
+}
+
+video:hover{
+    opacity: 1;
+    z-index: 33;
+}
+
+
+.post-example{
+    width: 720px;
+    grid-column: 1 /5;
+    grid-row:1;
+    z-index: 5;
+    justify-self: end;    
+    align-self: end;
+    display:block;
+    position: relative;
+    top:16rem;
+    right:-12rem;
+    opacity: .85;
+}
+.post-example:hover{
+    transition:var(--anima);
+    opacity: 1;
 }
 main{
     background-color: rgba(255, 240, 193, 0.562);
