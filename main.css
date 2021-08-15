@@ -159,6 +159,10 @@ h3{
     font-weight: 700;
     text-transform: uppercase;
 }
+
+section{
+    margin-top: 12rem!important;
+}
 section .subtitle{
     font-size: 1.6rem;
     max-width: 66ch;
@@ -361,10 +365,9 @@ video:hover{
 
 
 .deliver{
-    margin-top: 12rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:  180px 1fr 1fr;
+    grid-template-rows:  180px 100px 1fr;
     gap: 2rem 6rem;
 }
 
@@ -417,3 +420,31 @@ section.deliver .subtitle{
     position: relative;
     top:4rem;
 }
+
+.benefit-list{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem 12rem;
+}
+
+.benefit h3{
+    width: 16ch;
+}
+
+.process {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 1fr;
+}
+
+.arrow{
+    font-size: 12rem;
+    color: var(--main-color);
+    align-self: center;
+    justify-self: center;
+    position: relative;
+    top:-3rem;
+}
+
