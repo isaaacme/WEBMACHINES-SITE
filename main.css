@@ -560,3 +560,10 @@ section.deliver .subtitle{
     grid-column: 1;
 }
 
+.faq .questions{
+    margin-top:4rem;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:repeat(2,1fr) ;
+    gap:2rem;
+}
