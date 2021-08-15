@@ -479,10 +479,11 @@ section.deliver .subtitle{
 .plans{
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(2,460px);
+    grid-template-columns: repeat(3, 460px);
     grid-template-rows: 1fr;
     gap: 2rem;
-
+    height: 600px;
+    padding-bottom: 12rem;
 }
 
 .plans div{
@@ -490,9 +491,14 @@ section.deliver .subtitle{
     padding: 2rem;
     background-color:var(--main-color-08);
     border: 4px solid var(--main-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40px 100px 1fr;
+}
+
+.plans div a{
+    background-color: var(--main-color);
+    color: var(--bg-color);
 }
 
 .plans ul{
@@ -527,6 +533,17 @@ section.deliver .subtitle{
     ;
 }
 
+.list li::before{
+    background-color: transparent;
+    color: var(--main-color);
+}
+
+.list li{
+    font-size: 1.2rem;
+    margin-bottom: .75rem!important;
+    font-weight: 500;
+}
+
 .plans li p{
     margin:0;
 }
@@ -542,3 +559,4 @@ section.deliver .subtitle{
 .plans .basic{
     grid-column: 1;
 }
+
