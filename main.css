@@ -564,8 +564,8 @@ section.deliver .subtitle{
     margin-top:4rem;
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:repeat(8,1fr) ;
-    gap:1rem;
+    grid-template-rows:repeat(8,1fr fit-content) ;
+    gap:.5rem 12rem;
 }
 
 .questions .question:nth-child(1){
