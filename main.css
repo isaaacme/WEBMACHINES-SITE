@@ -572,3 +572,21 @@ section.deliver .subtitle{
     grid-column: 1;
     grid-row: 1 / 3;
 }
+/* .gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 160px) ;
+    grid-template-rows: repeat(4, 1fr fit-content);
+    gap:0;
+} */
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.gallery img , .gallery a{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
