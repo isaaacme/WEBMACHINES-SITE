@@ -103,6 +103,7 @@ section {
 }
 
 body {
+    font-family: 'Inter', sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;  
@@ -195,7 +196,7 @@ a {
 
 
 .wrap {
-    font-family: 'Inter', sans-serif;
+    
     flex: 1;
 }
 
@@ -607,9 +608,30 @@ section.deliver .subtitle{
     margin-bottom:6rem;
 }
 
-footer{
+footer.content{
     display: block;
-    
+    padding: 1rem 0;
     border-top: 2px solid var(--main-color);
     width: 100%;
+}
+
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer-content ul{display: flex;}
+.footer-content li{margin-right: 2rem;}
+.footer-content a{
+    transform: var(--anima);
+    font-weight: bold;
+
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+    color: var(--main-color);
 }
