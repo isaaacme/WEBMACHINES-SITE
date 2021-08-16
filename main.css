@@ -603,9 +603,13 @@ section.deliver .subtitle{
     filter: brightness(0.4);
 }
 
+.works{
+    margin-bottom:6rem;
+}
+
 footer{
     display: block;
-    margin-top:6rem;
+    
     border-top: 2px solid var(--main-color);
     width: 100%;
 }
