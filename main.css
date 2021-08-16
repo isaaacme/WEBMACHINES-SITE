@@ -563,7 +563,12 @@ section.deliver .subtitle{
 .faq .questions{
     margin-top:4rem;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:repeat(2,1fr) ;
-    gap:2rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(8,1fr) ;
+    gap:1rem;
+}
+
+.questions .question:nth-child(1){
+    grid-column: 1;
+    grid-row: 1 / 3;
 }
