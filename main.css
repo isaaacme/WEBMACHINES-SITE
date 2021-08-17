@@ -679,7 +679,7 @@ footer.content{
         flex-direction: column;
         }
 
-        nav li:not(.mobile){
+        nav li:not(.mobile) , .title::before {
             display: none;
             visibility: hidden;
             }
