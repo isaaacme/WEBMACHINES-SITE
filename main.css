@@ -198,6 +198,7 @@ a {
 .wrap {
     
     flex: 1;
+    
 }
 
 .content {
@@ -373,11 +374,18 @@ video:hover{
 }
 
 
-.deliver{
+/* .deliver{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows:  180px 100px 1fr;
     gap: 2rem 6rem;
+} */
+
+.deliver-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem 6rem;
+
 }
 
 section.deliver h2{
@@ -433,8 +441,7 @@ section.deliver .subtitle{
 .benefit-list{
     margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
     gap: 2rem 12rem;
 }
 
@@ -457,6 +464,7 @@ section.deliver .subtitle{
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: 1fr;
 }
+
 
 .step img{
     opacity: .08;
@@ -482,13 +490,9 @@ section.deliver .subtitle{
 }
 
 .plans{
-    margin-top: 4rem;
     display: grid;
-    grid-template-columns: repeat(3, 460px);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
     gap: 2rem;
-    height: 600px;
-    padding-bottom: 12rem;
 }
 
 .plans div{
@@ -599,7 +603,7 @@ section.deliver .subtitle{
     
 }
 
-.gallery img{    filter: brightness(1); transform: var(--anima);}
+.gallery img{filter: brightness(1); transform: var(--anima);}
 .gallery img:hover{
     filter: brightness(0.4);
 }
@@ -634,4 +638,40 @@ footer.content{
 .footer-content a:hover{
     text-decoration: underline;
     color: var(--main-color);
+}
+
+.footer-content input{
+    padding:18px;
+    border:transparent;
+    font-size: 1rem;
+}
+
+.footer-content input[type=email]{
+    width: 320px;
+    background-color: var(--main-color-08);
+    color: var(--main-color);
+}
+
+.footer-content input::placeholder{color: var(--main-color);opacity: .75;}
+
+.footer-content input[type=submit]{
+    background-color: var(--main-color);
+    text-transform:uppercase;
+    color: white;
+}
+
+.footer-content input[type=submit]:hover{
+    transition: var(--anima);
+    box-shadow: 2px 2px 24px var(--main-color);
+    transform:  scale(1.15);
+}
+
+
+/* mobile styles */
+@media only screen and (max-width: 425px){
+    .process{
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
