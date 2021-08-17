@@ -374,12 +374,6 @@ video:hover{
 }
 
 
-/* .deliver{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:  180px 100px 1fr;
-    gap: 2rem 6rem;
-} */
 
 .deliver-list{
     display: grid;
@@ -669,9 +663,18 @@ footer.content{
 
 /* mobile styles */
 @media only screen and (max-width: 425px){
-    .process{
+    .post-example , video{
+        display: none;
+        visibility: hidden;
+    }
+
+    .title{
+        font-size: 4rem;
+    }
+
+    .process {
         display: flex;
         flex-direction: column;
-    }
+        }
     
 }
