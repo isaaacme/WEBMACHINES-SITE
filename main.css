@@ -191,13 +191,6 @@ a {
 }
 
 
-/* 
-.wrap {
-    
-    flex: 1;
-    
-} */
-
 .content {
     max-width: 1600px;
     margin: 0 auto;
@@ -237,11 +230,8 @@ nav {
 
 
 header{
-    min-height: 65vh;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 100px 160px;
-    gap: 2rem;
+    display:flex;
+   
 }
 
 .title {
