@@ -104,10 +104,6 @@ section {
 
 body {
     font-family: 'Inter', sans-serif;
-    display: grid;
-    /* display: flex;
-    min-height: 100vh;
-    flex-direction: column;   */
     color: var(--text-color);
     font-size: 21px;
     line-height: 1.6;
